@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{amsfonts}
+\usepackage{arydshln}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{makecell}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{multicol}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\allowdisplaybreaks
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\title{{\large Math 497}\\ Homework 01}
+\author{Bridgette Delight}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{KNN}
+
+\begin{enumerate}
+    \item The brighter rows are from when the images in the training set are far from the images in test set. The brighter columns are the inverse. It occurs when the  the images in the test set are far from the images in training set.
+    \item 
+\end{enumerate}
+
+
+Code for knn
+\begin{verbatim}
+    dists[i,j] = np.sqrt(np.sum((X[i]- self.X_train[j])**2))
+    
+    dists[i] = np.sqrt(np.sum((X[i] - self.X_train)**2, axis = 1
+    
+    dists = np.sqrt(np.sum(X**2, axis= 1).reshape(num_test, 1) + 
+    np.sum(self.X_train**2, axis=1)-2*X.dot(self.X_train.T))
+    
+    closest_y = self.y_train[np.argsort(dists[i])[:k]]
+\end{verbatim}
+
+
+\section{}
+\vspace{10mm}
+
+
+\section{}
+\vspace{10mm}
+
+
+\section{}
+\vspace{10mm}
+
+\section{}
+\vspace{10mm}
+
+\section{}
+\vspace{10mm}
+
+
+\section{}
+\vspace{10mm}
+
+\section{}
+\vspace{10mm}
+
+
+\section{}
+\vspace{10mm}
+
+
+\section{}
+\vspace{10mm}
+
+
+
+
+\end{document}
